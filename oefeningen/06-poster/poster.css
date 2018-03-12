@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Nagasaki';
+    src: url('Nagasaki.woff2') format('woff2'),
+        url('Nagasaki.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font: 1.5vmin sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.poster {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 2fr 4fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: auto;
+    width: 70vmin;
+    height: 100vmin;
+    color: #fff;
+    letter-spacing: 0.1vmin;
+    word-spacing: 0.5vmin;
+    background: orangered;
+}
+
+.poster__title {
+    position: relative;
+    top: 7vmin;
+    margin: 0;
+    grid-column: 1 / -1;
+    font-size: 32.5vmin;
+    font-family: Nagasaki, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000;
+}
+
+.poster__description,
+.poster__location {
+    grid-column: 2 / 5;
+    font-size: 2vmin;
+    text-transform: lowercase;
+}
+
+.poster__opening, 
+.poster__dates {
+    grid-column: 3 / 4;
+}
+
+.poster__location {
+    grid-row: 2 / 3;
+}
+
+.poster__opening {
+    grid-row: 3 / 4;
+}
+
+.poster__title {
+    grid-row: 4 / 5;
+}
+
+.poster__description { 
+    grid-row: 5 / 6;
+}
+
+.poster__dates { 
+    grid-row: 6 / 7;
+}
